@@ -1,0 +1,61 @@
+table {
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 2px solid darkblue;
+}
+
+th, td {
+    padding: 7px;
+    text-align: left;
+    background-color: lightskyblue;
+}
+
+#form_abm {
+    display: none;
+}
+
+@keyframes spin { 
+    0% { transform: rotate(0deg); } 
+    100% { transform: rotate(360deg)}; 
+}
+
+.spinner-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: none;
+}
+
+.spinner{
+    border: 6px solid white;
+    border-top: 6px solid skyblue;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+body { 
+    display: flex; 
+    justify-content: 
+    center; align-items: 
+    center; height: 100vh;
+    margin: 0;
+}
+
+#form_abm { 
+    border: 1px solid lightblue; 
+    padding: 20px; 
+    box-shadow: 0 0 10px black; 
+    background-color: skyblue; 
+}
